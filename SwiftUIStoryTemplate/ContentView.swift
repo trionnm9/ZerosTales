@@ -12,7 +12,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Chapter 2", systemImage: "2.circle")
                 }
-            Chapter3View()
+            Pages()
                 .tabItem {
                     Label("Chapter 3", systemImage: "3.circle")
                 }
@@ -20,13 +20,13 @@ struct ContentView: View {
                 .tabItem {
                     Label("Chapter 4", systemImage: "4.circle")
                 }
-            Chapter5View()
-                .tabItem {
-                    Label("Chapter 5", systemImage: "5.circle")
+          //  Chapter5View()
+                //.tabItem {
+                  //  Label("Chapter 5", systemImage: "5.circle")
                 }
         }
     }
-}
+
 
 #Preview {
     ContentView()
