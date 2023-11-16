@@ -4,7 +4,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Chapter1View()
+//            Chapter1View()
+            Tabview()
                 .tabItem {
                     Label("Chapter 1", systemImage: "1.circle")
                 }
