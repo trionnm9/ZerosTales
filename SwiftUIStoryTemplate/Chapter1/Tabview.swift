@@ -64,12 +64,19 @@ struct Tabview: View {
                         .resizable()
                         .scaledToFit()
                     Text("After an agreement of a 70/30 split was made they set sail hastily in the event that bandits would already be traveling towards the mystic forest. after a days travel they reach the forest sailing on clear waters. they get to the forest, mesmerized by the land after some hiking through the land they see someone and start waving them down, the person runs so they try to follow their tracks and end up stuck going in a cirlce  7 times before zero says were going in circles i tied my scarf to that bush last go around for security ")
-                
+                    VStack {
+                        Stepper("passed same bush: \(travelSameBush)", value: $travelSameBush, in: 0...7)
+                           
+                    }
+                    
                 }
                 .padding()
+                                .ignoresSafeArea()
+                }
+                
             }
         }
-    }
+
     struct page3: View {
         var body: some View{
             
@@ -100,7 +107,7 @@ struct Tabview: View {
                     Image("gondlier")
                         .resizable()
                         .scaledToFit()
-                    Text("belief in zeros words the mage releases them and allows them passage into the village there they see all types of wildlife only known in folklore. if you wish to travel through the other side if the forest youll need onyx ore of your own mana once the gem is crafted we will have safe passage to the gondier who will take us to alkebulan we will be escorting you as well as tagging along for we are adventurers too.  zero and the travelers make the onyxore and begin passgage to the gondlier its now dawn of the next day and they  ")
+                    Text("belief in zeros words the mage releases them and allows them passage into the village there they see all types of wildlife only known in folklore. if you wish to travel through the other side if the forest youll need onyx ore of your own mana once the gem is crafted we will have safe passage to the gondier who will take us to alkebulan we will be escorting you as well as tagging along for we are adventurers too.  zero and the travelers make the onyxore and begin passgage to the gondlier its now dawn of the next day and they reach the gondalier. one onyx ore each if alkebulan is where you wish to reach. all 5 of them give the gondlier a piece of onyxore and board the boat ")
                 }
                 .padding()
             }
@@ -118,7 +125,7 @@ struct Tabview: View {
                     Image("bandit")
                         .resizable()
                         .scaledToFit()
-                    Text("bombastic side eye")
+                    Text("dawn appraoches, waters are calm as the group is nearing shore they hear a loud scream land hoooooo and see a big ship of bandits approaching fast. both boats reach shore at the same time and it immediately becomes a race. through the ruins of alkebulan Zero quick and nimble ahead of the pack huntress and mage are slowing down the bandits the travelers fell behind the pack after a long road zero reaches the ffoot of the pyramid  ")
                 }
                 .padding()
             }
@@ -136,7 +143,7 @@ struct Tabview: View {
                     Image("pyramid")
                         .resizable()
                         .scaledToFit()
-                    Text("bombastic side eye")
+                    Text("zero roams the pyramid he finds a throan room and finds a key with a scarab on it he continues to roam and comes across a room with a sarcophigus in it filled with gold and jewels he sees stairs and takes them once at the peak zero he sees a single chest with the same scarab as the key he contemplates wether or not to open it without the travelers then he hears i heard a noise from this way follow me and its the bandits he opens the chest to find a singular gold coin once he touches it he dissapears. ")
                 }
                 .padding()
             }
